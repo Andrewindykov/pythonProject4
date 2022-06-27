@@ -1,0 +1,1 @@
+print(('НЕТ', 'ДА')[{'house', 'True', '5'}.issubset(input().replace('=', ' ').split()[::2])])

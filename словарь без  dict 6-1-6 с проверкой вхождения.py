@@ -1,0 +1,1 @@
+d = dict([i.split('=') for i in input().split()])
