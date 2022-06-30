@@ -1,10 +1,16 @@
-lst = input().split()
+import sys
+# считывание списка из входного потока
+lst_in = list(map(str.strip, sys.stdin.readlines()))
+
 d = {}
-for s in lst:
-    c = s[:2]
-    if c in d:
-        d[c].append(s)
+for v in lst_in:
+    number,name=v.split()
+
+    if name in d:
+        d[name].append(number)
+
     else:
-        d[c] = [s]
-    print(s,d)
+        d[name]=[number]
+
+    
 print(*sorted(d.items()))

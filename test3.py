@@ -1,12 +1,9 @@
-# put your python code here
-lst=list(input().split())
-lst2=[]
+# Program to loop through the list using while loop
+list = [9, 11, 13, 15, 17, 19]
 
-for i in range(len(lst)):
-    a,b=lst[i].split('=')
+# Finding length of the list(list)
 
-    lst2.append([a,int(b)])
-print(lst2)
-d=dict(lst2)
-print(d)
-print(*sorted(d.items()))
+# While Loop to iterate through list
+while i < length:
+	print(list[i])
+	i
